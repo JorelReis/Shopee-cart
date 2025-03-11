@@ -1,0 +1,27 @@
+{
+  "name": "shopee-cart",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000h\u0000o\u0000p\u0000e\u0000e\u0000-\u0000c\u0000a\u0000r\u0000t\u0000\r\u0000 \u0000",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorelReis/Shopee-cart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorelReis/Shopee-cart/issues"
+  },
+  "homepage": "https://github.com/JorelReis/Shopee-cart#readme",
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ws": "^8.18.1"
+  }
+}

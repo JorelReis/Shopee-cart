@@ -1,0 +1,237 @@
+/* Reset básico para remover margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilização geral da página */
+  body {
+    background: #FAF3E0; /* Um bege claro pastel */
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+  }
+  
+  /* Container principal */
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Títulos */
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  /* Lista de produtos */
+  .product-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .product-list li {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Botões */
+  button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #219150;
+  }
+  
+  /* Botão de remover */
+  .remove-btn {
+    background-color: #e74c3c;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Inputs */
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  /* Centralizar a lista de produtos */
+.product-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .product-list {
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; /* Aumenta o espaçamento entre os itens da lista */
+  }
+  
+  /* Ajustar botões dentro dos itens */
+  .product-list li button {
+    white-space: nowrap; /* Evita quebra de linha nos botões */
+  }
+  
+  /* Espaçamento entre o Carrinho e o Checkout */
+.container {
+    margin-bottom: 20px; /* Adiciona espaçamento entre as seções */
+    padding-bottom: 20px; /* Garante espaço dentro da div */
+  }
+  
+  /* Ajustar botões para não encostarem nos produtos de baixo */
+button {
+  background-color: #27ae60;
+  color: white;
+  border: none; /* Remove borda extra */
+  padding: 8px 12px; /* Ajusta o tamanho interno */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin: 5px; /* Adiciona espaço entre os botões */
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+/* Estilo para cada item do carrinho */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  width: 100%; /* Faz a LI ocupar a largura total da div container */
+  max-width: 600px; /* Define um limite máximo */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+}
+
+
+
+/* Informações do item */
+.item-info {
+  flex: 1;
+  font-size: 16px;
+}
+
+/* Controles de quantidade */
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Define o espaçamento entre os elementos */
+}
+
+/* Botões de quantidade */
+.quantity-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.quantity-btn:hover {
+  background-color: #219150;
+}
+
+/* Quantidade de itens */
+.item-quantity {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  min-width: 20px; /* Garante que o número tenha um espaço fixo */
+  text-align: center;
+}
+
+/* Estilização do cabeçalho */
+.header-container {
+  background-color: #F4D03F; /* Bege Dourado Suave */
+  color: #5D4037; /* Marrom elegante para contraste */
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Fonte do título */
+.header-container h1 {
+  font-family: 'Dancing Script', cursive; /* Fonte Cursiva */
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Garante que a lista (UL) esteja centralizada */
+.product-list {
+  display: flex;
+  flex-direction: column; /* Mantém os itens em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  padding: 0; /* Remove espaçamentos laterais */
+  width: 100%; /* Faz a UL ocupar toda a largura disponível */
+}
+
+/* Garante que os itens da lista (LI) fiquem alinhados corretamente */
+.product-list li {
+  display: flex;
+  justify-content: space-between; /* Distribui os elementos */
+  align-items: center; /* Alinha verticalmente */
+  padding: 10px;
+  width: 90%; /* Mantém um tamanho adequado para centralizar */
+  max-width: 500px; /* Define um limite para não ficar muito largo */
+  background: white;
+  border-bottom: 1px solid #ddd; /* Mantém uma separação visual */
+  border-radius: 10px; /* Deixa os cantos arredondados */
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Garante que os itens fiquem centralizados */
+  width: 100%;
+}
