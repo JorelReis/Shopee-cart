@@ -41,12 +41,15 @@ function Checkout({ cart }) {
     setIsProcessing(true);
     setStatus('Processando pagamento...');
 
-    axios.post('http://localhost:5000/checkout', {
-      cardNumber,
-      totalAmount: parseFloat(totalAmount)
-    })
-    .catch(() => setStatus('Erro ao processar pagamento.'));
-  };
+    // 🔹 Delay de 3 segundos antes de enviar a requisição
+    setTimeout(() => {
+        axios.post('http://localhost:5000/checkout', {
+          cardNumber,
+          totalAmount: parseFloat(totalAmount)
+        })
+        .catch(() => setStatus('Erro ao processar pagamento.'));
+    }, 3000); // ⏳ 3 segundos de delay antes de processar
+};
 
   return (
     <div className="container">

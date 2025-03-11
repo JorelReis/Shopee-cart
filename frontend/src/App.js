@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Cart from './components/Cart';
 import ProductList from './components/ProductList';
 import Checkout from './components/Checkout';
-import './styles.css';
+import Sidebar from './components/Sidebar'; // 🔹 Importando a Sidebar
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -14,6 +14,9 @@ function App() {
 
   return (
     <div>
+      {/* 🔹 Sidebar adicionada aqui */}
+      <Sidebar />
+
       <div className="header-container">
         <h1>Lojinha Online</h1>
       </div>
